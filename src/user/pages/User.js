@@ -17,6 +17,7 @@ const User = () => {
                   `${process.env.REACT_APP_BACKEND_URL}/users/`
                 );
                 const responseData = await response.json();
+                console.log(responseData);
 
                 if (!response.ok) {
                   throw new Error(responseData.message);
