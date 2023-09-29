@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 
+
 let logoutTimer;
 
 export const useAuth = () => {
@@ -28,6 +29,7 @@ export const useAuth = () => {
     setTokenExpirationDate(null);
     setUserId(null);
     localStorage.removeItem("userData");
+
   }, []);
 
   useEffect(() => {
